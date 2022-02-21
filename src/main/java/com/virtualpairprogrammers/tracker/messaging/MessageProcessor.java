@@ -32,7 +32,7 @@ public class MessageProcessor {
 																	.withName(incomingMessage.get("vehicle"))
 																	.withLat(new BigDecimal(incomingMessage.get("lat")))
 																	.withLng(new BigDecimal(incomingMessage.get("long")))
-																	.withSpeed(47.5)
+																	.withSpeed(BigDecimal.valueOf(47.5))
 																	.withTimestamp(convertedDatestamp)
 																	.build();
 				                          
